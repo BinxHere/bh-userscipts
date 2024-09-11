@@ -4,7 +4,9 @@
 // @version      1.0
 // @description  Changes the default font of a website to the Ubuntu font.
 // @author       BinxHere
+// @license       The Unlicence
 // @match        *://*/*
+// @icon            https://assets.ubuntu.com/v1/3cf74f71-Canonical%20Dark.svg
 // @grant        none
 // ==/UserScript==
 
