@@ -3,6 +3,7 @@
 // @version      1.0
 // @description  Convert "r/[subreddit]" text into clickable Reddit hyperlinks
 // @author       BinxHere
+// @icon         https://raw.githubusercontent.com/BinxHere/bh-userscipts/main/redact%20thing.png
 // @grant        none
 // ==/UserScript==
 
