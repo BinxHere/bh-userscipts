@@ -1,0 +1,24 @@
+// ==UserScript==
+// @name         Fontifer (Ubuntu)
+// @namespace    https://violentmonkey.github.io/
+// @version      1.0
+// @description  Changes the default font of a website to the Ubuntu font.
+// @author       BinxHere
+// @match        *://*/*
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // Append a new style element to the document's head
+    var style = document.createElement('style');
+    style.type = 'text/css';
+    style.innerHTML = `
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+        * {
+            font-family: 'Ubuntu', sans-serif !important;
+        }
+    `;
+    document.head.appendChild(style);
+})();
