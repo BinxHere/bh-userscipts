@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Reddit r/ Link Converter
 // @namespace    https://violentmonkey.github.io/
-// @version      1.0.1
+// @version      1.0.2
 // @description  Convert r/[subreddit] text into clickable Reddit hyperlinks. This script was made with help of chatgpt
 // @author       BinxHere
 // @match        http://*/*
