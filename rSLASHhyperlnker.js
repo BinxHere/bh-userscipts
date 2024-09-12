@@ -7,6 +7,7 @@
 // @match        http://*/*
 // @match        https://*/*
 // @license      The Unlicense
+// @exclude    *.google.com
 // @icon         https://raw.githubusercontent.com/BinxHere/bh-userscipts/main/redact%20thing.png
 // @grant        none
 // ==/UserScript==
