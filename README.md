@@ -1,5 +1,6 @@
 # bh-userscipts
 BinxHere's Userscipts
+All icons are made by me during my graphic design class 
 
 r/ Hyperlinker
 
