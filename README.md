@@ -8,6 +8,13 @@ This something I thought would be helpful so I had chatgpt make a script and I t
 
 ``https://raw.githubusercontent.com/BinxHere/bh-userscipts/main/rSLASHhyperlnker.js``
 
+Test it's working:
+r/BTD6
+r/fakeahhhhhhsubreddit
+r/memes
+r/evenfakersubroddet
+r/github
+
 # Ubuntu Fontified
 
 This is still a WORK IN PROGRESS, basically just makes your website font from whatever they have to the ubuntu, also planning to make one with a controllable part to upload TTF files or use a google font library font. If you have issues with this one, try allowing 3rd party fonts via your adblock. 
