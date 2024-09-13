@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Reddit r/ Link Converter with Existence Check
 // @namespace    https://violentmonkey.github.io/
-// @version      1.1.0
+// @version      1.1.1
 // @description  Convert r/[subreddit] text into clickable Reddit hyperlinks if the subreddit exists.
 // @author       BinxHere
 // @match        http://*/*
 // @match        https://*/*
 // @license      The Unlicense
 // @exclude      *.google.com
-// @icon         https://raw.githubusercontent.com/BinxHere/bh-userscipts/main/redact%20thing.png
+// @icon         
 // @grant        none
 // ==/UserScript==
 
@@ -17,11 +17,8 @@
 
     // Function to check if a subreddit exists
     function checkSubredditExists(subreddit) {
-        return fetch(`https://www.reddit.com/r/${subreddit}/about.json`)
-            .then(response => {
-                if (response.ok) return true; // Subreddit exists
-                else return false; // Subreddit does not exist
-            })
+        return fetch(`https://www.reddit.com/r/${subreddit}/about.json`, { method: 'HEAD' })
+            .then(response => response.ok) // Returns true if subreddit exists, otherwise false
             .catch(() => false); // Handle network errors or other issues
     }
 
@@ -51,13 +48,16 @@
                         const exists = await checkSubredditExists(subreddit);
 
                         if (exists) {
-                            newHTML = newHTML.replace(match, `<a href="https://www.reddit.com/r/${subreddit}" target="_blank">${match}</a>`);
+                            newHTML = newHTML.replace(new RegExp(`\\b${match}\\b`, 'g'), `<a href="https://www.reddit.com/r/${subreddit}" target="_blank">${match}</a>`);
                         }
                     }
 
-                    const span = document.createElement('span');
-                    span.innerHTML = newHTML;
-                    parent.replaceChild(span, node);
+                    // If the text content has been changed, update the node
+                    if (newHTML !== node.textContent) {
+                        const span = document.createElement('span');
+                        span.innerHTML = newHTML;
+                        parent.replaceChild(span, node);
+                    }
                 }
             }
         }
