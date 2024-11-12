@@ -1,13 +1,26 @@
 // ==UserScript==
-// @name         Reddit r/ Link Converter (Whitespace Aware)
+// @name         Reddit r/ Link Converter
 // @namespace    https://violentmonkey.github.io/
 // @version      1.1.0
-// @description  Convert r/[subreddit] text into clickable Reddit hyperlinks only if surrounded by whitespace or at the beginning of a line.
+// @description  Convert r/[subreddit] text into clickable Reddit hyperlinks. Created with help of chatGPT.
 // @author       BinxHere
 // @match        http://*/*
 // @match        https://*/*
 // @license      The Unlicense
+// @updateURL	 https://raw.githubusercontent.com/BinxHere/bh-userscipts/refs/heads/main/rSLASHhyperlnker.js
 // @exclude      *.google.com
+// @compatible   chrome
+// @compatible   firefox
+// @compatible   edge
+// @compatible   opera
+// @compatible   brave
+// @compatible   vivaldi
+// @compatible   waterfox
+// @compatible   librewolf
+// @compatible   ghost
+// @compatible   qq
+// @compatible   whale
+// @compatible   kiwi
 // @grant        none
 // ==/UserScript==
 
