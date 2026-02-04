@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         YT Logo Redirector
 // @namespace    https://violentmonkey.github.io/
-// @version      1.0
+// @version      1.0.1
 // @description  Make the YouTube logo in the top left redirect to the Subscriptions page instead of Home
 // @author       BinxHere
 // @match       https://*.youtube.com/*
 // @match       http://*.youtube.com/*
 // @run-at      document-start
 // @license      GNU V2
-// @updateURL	 *
+// @updateURL	 https://raw.githubusercontent.com/BinxHere/bh-userscipts/refs/heads/main/YTLogoSubscriptions.js
 // @compatible   chrome
 // @compatible   firefox
 // @compatible   edge
